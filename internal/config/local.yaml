@@ -1,0 +1,6 @@
+env: "local"
+storage_path: "./repository/redirect.db"
+grpc:
+  port: 5051
+  timeout: 10h
+  
