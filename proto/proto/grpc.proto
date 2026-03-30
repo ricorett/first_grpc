@@ -1,7 +1,11 @@
 syntax = "proto3";
+
 package server;
 
-service Redirect {
-  rpc Health() returns;
-}
+option go_package = "lana.redirect.v1.redv1";
 
+import "google/protobuf/empty.proto";
+
+service Redirect {
+  rpc Health(google.protobuf.Empty) returns (google.protobuf.Empty);
+}
